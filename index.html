@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virasat-Namma Guide | Smart Heritage Tourism App</title>
+    <meta name="description" content="Virasat-Namma Guide is a smart heritage tourism Android app for discovering Karnataka's historical places, QR facts, audio guides, and travel passport check-ins.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#home" class="brand">Virasat-Namma Guide</a>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#screenshots">Screenshots</a>
+                <a href="#technology">Technology</a>
+                <a href="#developer">Developer</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="eyebrow">Smart Heritage Tourism App</p>
+                <h1>Virasat-Namma Guide</h1>
+                <p class="hero-description">
+                    A Kotlin and Jetpack Compose Android app that helps visitors discover Karnataka's heritage places,
+                    scan QR codes for hidden facts, listen to audio history, and collect check-ins like a digital travel passport.
+                </p>
+                <div class="hero-actions">
+                    <a class="primary-button" href="https://github.com/ChandanaYS/Virasat-Namma-Guide" target="_blank" rel="noopener">
+                        View GitHub Repository
+                    </a>
+                    <a class="secondary-button" href="https://github.com/ChandanaYS/Virasat-Namma-Guide/releases" target="_blank" rel="noopener">
+                        Download APK
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro-section">
+            <div class="section-heading">
+                <p class="eyebrow">Project Overview</p>
+                <h2>Built For Meaningful Heritage Exploration</h2>
+            </div>
+            <p class="intro-text">
+                Virasat-Namma Guide brings together location-based discovery, cultural storytelling, QR scanning,
+                audio narration, and travel history tracking in one clean mobile experience. The app is designed for
+                tourists, students, and heritage enthusiasts who want a simple way to explore historical places with
+                context and confidence.
+            </p>
+        </section>
+
+        <section id="features" class="features-section">
+            <div class="section-heading">
+                <p class="eyebrow">Core Features</p>
+                <h2>Everything Needed For A Smart Tourism App</h2>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>Location Discovery</h3>
+                    <p>Explore nearby Karnataka heritage places with radius filters and clean place cards.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">📷</div>
+                    <h3>QR Scanner</h3>
+                    <p>Scan heritage QR codes using CameraX and Google ML Kit to open the correct place page.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">🔊</div>
+                    <h3>Audio Guide</h3>
+                    <p>Listen to history narration through an optimized Android text-to-speech audio guide.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>Travel Passport</h3>
+                    <p>Check in at places and save visited heritage locations using Room Database.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="screenshots" class="screenshots-section">
+            <div class="section-heading">
+                <p class="eyebrow">App Preview</p>
+                <h2>Sample Screenshots</h2>
+            </div>
+            <div class="screenshot-grid">
+                <article class="phone-card">
+                    <div class="phone-frame">
+                        <div class="phone-screen home-preview">
+                            <span>Home</span>
+                        </div>
+                    </div>
+                    <h3>Nearby Places</h3>
+                </article>
+                <article class="phone-card">
+                    <div class="phone-frame">
+                        <div class="phone-screen qr-preview">
+                            <span>QR Scanner</span>
+                        </div>
+                    </div>
+                    <h3>Scan Heritage QR</h3>
+                </article>
+                <article class="phone-card">
+                    <div class="phone-frame">
+                        <div class="phone-screen passport-preview">
+                            <span>Passport</span>
+                        </div>
+                    </div>
+                    <h3>Travel History</h3>
+                </article>
+            </div>
+        </section>
+
+        <section class="highlight-section">
+            <article class="highlight-card">
+                <h2>QR Scanner Feature</h2>
+                <p>
+                    The app scans custom QR payloads such as <strong>virasat://place/hampi</strong>.
+                    After scanning, it opens the matching heritage page and reveals a hidden fact.
+                </p>
+            </article>
+            <article class="highlight-card">
+                <h2>Audio Guide Feature</h2>
+                <p>
+                    The audio guide reads place history aloud with managed audio focus, clean playback,
+                    and smooth narration behavior for a better tourism experience.
+                </p>
+            </article>
+            <article class="highlight-card">
+                <h2>Travel Passport Feature</h2>
+                <p>
+                    Users can check in at visited places and view their travel history, creating a simple
+                    digital memory of heritage exploration.
+                </p>
+            </article>
+        </section>
+
+        <section id="technology" class="technology-section">
+            <div class="section-heading">
+                <p class="eyebrow">Technology Stack</p>
+                <h2>Built With Modern Android Tools</h2>
+            </div>
+            <div class="tech-list">
+                <span>Kotlin</span>
+                <span>Jetpack Compose</span>
+                <span>MVVM</span>
+                <span>StateFlow</span>
+                <span>Room Database</span>
+                <span>Navigation Compose</span>
+                <span>CameraX</span>
+                <span>Google ML Kit</span>
+                <span>Text-to-Speech</span>
+            </div>
+        </section>
+
+        <section id="developer" class="developer-section">
+            <div class="developer-card">
+                <p class="eyebrow">Developer Information</p>
+                <h2>Developed by Chandana Y S</h2>
+                <p>
+                    This project demonstrates Android development skills in Jetpack Compose, local database storage,
+                    QR scanning, navigation, audio guide behavior, and responsive UI design.
+                </p>
+                <a class="primary-button" href="https://github.com/ChandanaYS/Virasat-Namma-Guide" target="_blank" rel="noopener">
+                    Open Project on GitHub
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Developed by Chandana Y S</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
